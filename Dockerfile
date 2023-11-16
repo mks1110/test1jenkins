@@ -11,9 +11,10 @@
 # Create an entrypoint
 
 FROM python:3.6
+WORKDIR /app
 COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-ENV YOUR_NAME QA
 EXPOSE 5500
+ENV YOUR_NAME "QA"
 ENTRYPOINT ["python","app.py"]
