@@ -16,5 +16,5 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 EXPOSE 5500
-ENV YOUR_NAME "Michaela"
+ENV YOUR_NAME Michaela
 ENTRYPOINT ["python","app.py"]
