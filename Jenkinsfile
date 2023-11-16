@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh '''
                 docker push mks1011/task1jenk
-                dash push mks1011/task1-nginx
+                docker push mks1011/task1-nginx
                 '''
             }
 
